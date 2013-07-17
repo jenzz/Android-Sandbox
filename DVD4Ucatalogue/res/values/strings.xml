@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DVD4Ucatalogue</string>
+    <string name="optionsItemExit">Exit</string>
+    <string name="optionsItemSearch">Search</string>
+    <string name="searchDialogTitle">Search DVD4U Catalogue</string>
+    <string name="errorNoDataFound">- SORRY NO DVDs FOUND -</string>
+    <string name="contentDescriptionDVDCover">DVD Cover</string>
+    <string name="buttonSearchAgain">Search again?</string>
+
+</resources>
