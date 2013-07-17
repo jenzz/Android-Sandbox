@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.jensdriller.thenewboston"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light" >
+            <intent-filter>
+                <action android:name="de.jensdriller.thenewboston.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SQLView"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="de.jensdriller.thenewboston.SQLVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Counter"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name=".TextPlay"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black" >
+        </activity>
+        <activity
+            android:name=".Email"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Camera"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Camera Application" >
+        </activity>
+        <activity
+            android:name=".DataSend"
+            android:label="Send Data" >
+        </activity>
+        <activity
+            android:name=".DataGet"
+            android:label="Get Data" >
+        </activity>
+        <activity
+            android:name=".GFX"
+            android:label="Graphics" >
+        </activity>
+        <activity
+            android:name=".GFXSurface"
+            android:label="Graphics Surface" >
+        </activity>
+        <activity
+            android:name=".Sound"
+            android:label="Sound Stuff" >
+        </activity>
+        <activity
+            android:name=".Slider"
+            android:label="Slider" >
+        </activity>
+        <activity
+            android:name=".Tabs"
+            android:label="Tabs" >
+        </activity>
+        <activity
+            android:name=".SimpleBrowser"
+            android:label="Simple Browser" >
+        </activity>
+        <activity
+            android:name=".Flipper"
+            android:label="Flipper" >
+        </activity>
+        <activity
+            android:name=".SharedPrefs"
+            android:label="Use of Shared Preferences" >
+        </activity>
+        <activity
+            android:name=".InternalData"
+            android:label="Use of Internal Data" >
+        </activity>
+        <activity
+            android:name=".ExternalData"
+            android:label="Use of External Data" >
+        </activity>
+        <activity
+            android:name=".SQLite"
+            android:label="SQLite Example" >
+        </activity>
+        <activity
+            android:name=".Accelerate"
+            android:label="Accelerate"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".HTTP"
+            android:label="HTTP-Example" >
+        </activity>
+        <activity
+            android:name=".WeatherXML"
+            android:label="Weather XML Parsing Example" >
+        </activity>
+        <activity
+            android:name=".Voice"
+            android:label="Voice2List Example" >
+        </activity>
+        <activity
+            android:name=".TextVoice"
+            android:label="Text2Voice Example" >
+        </activity>
+        <activity
+            android:name=".NotificationBar"
+            android:label="Notification / Status Bar Example"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name=".SeekBarVolume"
+            android:label="Control Stream Music Volume" >
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".Preferences"
+            android:label="@string/app_name" >
+        </activity>
+
+        <receiver
+            android:name=".PointlessWidget"
+            android:label="Pointless Widget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_stuff" />
+        </receiver>
+
+        <activity
+            android:name=".PointlessWidgetConfig"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

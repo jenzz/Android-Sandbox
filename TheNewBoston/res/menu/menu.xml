@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/itemAboutUs"
+        android:alphabeticShortcut="a"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:numericShortcut="1"
+        android:title="About Us">
+    </item>
+    <item
+        android:id="@+id/itemPreferences"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="Preferences">
+    </item>
+    <item
+        android:id="@+id/itemExit"
+        android:title="Exit">
+    </item>
+
+</menu>
